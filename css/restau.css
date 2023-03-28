@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "sans-serif";
+}
+
+/*  BANNIERE */
+header {
+  margin-bottom: 0;
+}
+
+header h1 {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 180px;
+  font-family: "shrikhand", "sans-serif";
+  font-size: 30px;
+}
+
+header img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+header i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+/* MENU */
+.menu {
+  position: relative;
+  background-color: #f2f2f2;
+  border-radius: 35px 35px 0 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -100px;
+}
+
+ h2 {
+  font-family: "shrikhand", "sans-serif";
+  font-size: 24px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-top: 0;
+  padding-top: 30px;
+  margin-bottom: -25px;
+  z-index: 2;
+  position: relative;
+  top: -15px;
+}
+
+.menu .like {
+  font-size: 25px;
+  position: relative;
+  bottom: 7px;
+  left: 88%;
+  width: 30px;
+  cursor: pointer;
+  z-index: 2;
+  top: 60px;
+}
+
+.like .fa-regular{
+  position: relative;
+  top: -7px;
+}
+
+.like .fa-solid {
+  font-size: 25px;
+  position: relative;
+  top: -38px;
+  color: transparent;
+  background: linear-gradient(
+    to top,
+    rgba(147, 86, 220, 0.9),
+    rgba(225, 121, 218, 0.9)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all, 0.8s;
+}
+
+.like .fa-solid:hover {
+  opacity: 1;
+}
+
+.menu h3 {
+  border-bottom: 4px solid #99e2d0;
+  width: 40px;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.starters {
+  margin-left: 20px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 90%;
+  height: 55px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transform-origin: top;
+}
+
+.tempo1 {
+  animation: emergence 0.5s;
+  
+}
+.tempo2 {
+  animation: emergence 1s;
+}
+.tempo3 {
+  animation: emergence 1.5s;
+}
+.tempo4 {
+  animation: emergence 2s;
+}
+
+@keyframes emergence {
+  0%{
+    transform: translateY(20%);
+    opacity: 0;  
+  }
+
+  100%{
+    transform: translateY(0);
+    }
+}
+
+.description-card {
+  flex: 1;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card h4 {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card p {
+  font-size: 15px;
+  margin: 3px 11px 16px;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card .price {
+  margin: 28px 12px 5px;
+}
+
+.card .check {
+  display: flex;
+  flex-direction: column;
+  background-color: #99e2d0;
+  height: 55px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 16px 16px 0;
+  margin-right: -50px;
+  transition: all 0.5s;
+}
+
+.card:hover .check {
+  margin-right: 0;
+  transition-duration: 0.5s;
+}
+
+.check i {
+  background: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99e2d0;
+}
+
+.card:hover i {
+  animation-duration: 0.7s;
+  animation-name: spin;
+  transform: rotate(360deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dishes {
+  margin-left: 20px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.deserts {
+  margin-left: 20px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0px;
+  }
+
+  .starters {
+    margin-top: 60px;
+    width: 30vw;
+  }
+
+  .dishes {
+    margin-top: 60px;
+    width: 30vw;
+  }
+
+  .deserts {
+    margin-top: 60px;
+    width: 30vw;
+  }
+}
+
+button {
+  color: white;
+  font-size: medium;
+  border: none;
+  padding: 18px;
+  width: 225px;
+  height: 50px;
+  padding-top: 15px;
+  border-radius: 32px;
+  box-shadow: 2px 5px 15px -7px black;
+  margin-top: 15px;
+  background-image: linear-gradient(
+    to top left,
+    rgba(147, 86, 220, 0.9),
+    rgba(225, 121, 218, 0.9) 70%
+  );
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-image: linear-gradient(
+    to top left,
+    rgba(225, 121, 218, 0.9),
+    rgba(147, 86, 220, 0.9)
+  );
+}
+
+/* FOOTER */
+footer {
+  background-color: rgb(56, 56, 56);
+  height: 220px;
+}
+
+footer h3 {
+  margin: 9px;
+  padding-left: 20px;
+  color: white;
+  font-family: "shrikhand";
+  font-weight: normal;
+  padding-top: 25px;
+  margin-top: 0;
+}
+
+footer p {
+  margin: 9px;
+  padding-left: 20px;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
